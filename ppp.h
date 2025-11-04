@@ -22,7 +22,7 @@ class ProtobufUtils {
 
     static void printDirectory(std::string dir) {
         AUTIL_LOG
-        for (const auto1& entry : fs::directory_iterator(dir)) {
+        for (const auto& entry : fs::directory_iterator(dir)) {
             // 判断是否为目录
             if (entry.is_directory()) {
                 AUTIL_LOG(INFO, "list directoy [DIR] %s", entry.path().filename().c_str());
